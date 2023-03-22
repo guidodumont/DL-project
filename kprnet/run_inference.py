@@ -14,17 +14,25 @@ from datasets.semantic_kitti import (
 from utils.evaluation import Eval
 from models import deeplab
 
-# parser = argparse.ArgumentParser("Run lidar bug inference")
-# parser.add_argument("--checkpoint-path", required=True, type=Path)
-# parser.add_argument("--output-path", required=True, type=Path)
-# parser.add_argument("--semantic-kitti-dir", required=True, type=Path)
-# parser.add_argument("--split", default="val", type=str)
-# args = parser.parse_args()
+name = "aden"
 
-path_data = Path("/home/guido/Documents/TUDelft/MasterRobotics/FirstYear/CS4240_DL/Project/data/dataset/sequences")
-split = "val"
-output_path = Path("/home/guido/Documents/TUDelft/MasterRobotics/FirstYear/CS4240_DL/Project/data/output")
-model_parameters = Path("/home/guido/Documents/TUDelft/MasterRobotics/FirstYear/CS4240_DL/Project/data/model/kpr_trained.pth")
+if name == "guido":
+    path_data = Path("/home/guido/Documents/TUDelft/MasterRobotics/FirstYear/CS4240_DL/Project/data/dataset/sequences")
+    split = "val"
+    output_path = Path("/home/guido/Documents/TUDelft/MasterRobotics/FirstYear/CS4240_DL/Project/data/output")
+    model_parameters = Path("/home/guido/Documents/TUDelft/MasterRobotics/FirstYear/CS4240_DL/Project/data/model/kpr_trained.pth")
+
+elif name =="aden":
+    path_data = Path("/media/aden/Expansion/SemanticKITTI/data_odometry_velodyne/dataset/sequences")
+    split = "val"
+    output_path = Path("/home/aden/DL_project/kprnet/output")
+    model_parameters = Path("/home/aden/Downloads/kpr_trained.pth")
+
+elif name == "badr":
+    path_data = Path("/home/guido/Documents/TUDelft/MasterRobotics/FirstYear/CS4240_DL/Project/data/dataset/sequences")
+    split = "val"
+    output_path = Path("/home/guido/Documents/TUDelft/MasterRobotics/FirstYear/CS4240_DL/Project/data/output")
+    model_parameters = Path("/home/guido/Documents/TUDelft/MasterRobotics/FirstYear/CS4240_DL/Project/data/model/kpr_trained.pth")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
