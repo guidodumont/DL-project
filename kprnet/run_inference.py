@@ -14,7 +14,7 @@ from datasets.semantic_kitti import (
 from utils.evaluation import Eval
 from models import deeplab
 
-name = "aden"
+name = "guido"
 
 if name == "guido":
     path_data = Path("/home/guido/Documents/TUDelft/MasterRobotics/FirstYear/CS4240_DL/Project/data/dataset/sequences")
@@ -34,7 +34,14 @@ elif name == "badr":
     output_path = Path("/home/guido/Documents/TUDelft/MasterRobotics/FirstYear/CS4240_DL/Project/data/output")
     model_parameters = Path("/home/guido/Documents/TUDelft/MasterRobotics/FirstYear/CS4240_DL/Project/data/model/kpr_trained.pth")
 
+elif name == "vm":
+    path_data = Path("/home/guidodumont_gd/data/dataset/sequences")
+    split = "test"
+    output_path = Path("/home/guidodumont_gd/output")
+    model_parameters = Path("/home/guidodumont_gd/kpr_trained.pth")
+
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print(device)
 
 def main():
     print("test")
@@ -48,7 +55,11 @@ def main():
     model = deeplab.resnext101_aspp_kp(19)
     model.to(device)
     model.load_state_dict(torch.load(model_parameters, map_location=torch.device('cpu')))
+
     print("Running validation")
+    torch.set_num_threads(14)
+    torch.set_num_interop_threads(14)
+
     model.eval()
     eval_metric = Eval(19, 255)
     with torch.no_grad():
