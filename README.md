@@ -2,7 +2,7 @@
 
 1. Create VM instance with the following specs:
    - Location/zone: europe-west4-a
-   - GPU: NVIDEA Tesla P100
+   - GPU: NVIDIA Tesla P100
    - Activate CUDA cores
      - In same menu change disk size to 250Gb and select SSD
    - Check the both HTTPS boxes
