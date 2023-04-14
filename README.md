@@ -25,7 +25,8 @@ Please follow the installation instruction of the original [repository](https://
 Run *run_inference.py* in the source code in the original [repository](https://github.com/DeyvidKochanov-TomTom/kprnet).
 
 ### Data augmentation to check robustness
-...
+In the file semantic_kitti.py, the percentage of pixel dropout can be changed in [this line](https://github.com/guidodumont/DL-project/blob/37a7876d4b64270cc9bdb75a2d67d976ea9446ba/kprnet/datasets/semantic_kitti.py#L128)
+Run *run_inference.py* in the source code in the "Badr" branch of this repository.
 
 ### Reproduction of the results in the paper
 Run the Jupyter Notebook *implementation_kitti360.ipynb*.
