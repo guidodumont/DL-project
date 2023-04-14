@@ -1,0 +1,3 @@
+[submodule "kprnet"]
+	path = kprnet
+	url = https://github.com/DeyvidKochanov-TomTom/kprnet
