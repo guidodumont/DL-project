@@ -4,3 +4,4 @@ data/
 *.zip
 output/
 *.csv
+.ipynb_checkpoints/
