@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        Blog post - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{background:#fff;color:#333;display:block;overflow-x:auto;padding:.5em}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{background-color:#eaffea;color:#55a532}.hljs-deletion{background-color:#ffecec;color:#bd2c00}.hljs-link{text-decoration:underline}.markdown-body{word-wrap:break-word;font-size:16px;line-height:1.5}.markdown-body:after,.markdown-body:before{content:"";display:table}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-bottom:16px;margin-top:0}.markdown-body hr{background-color:#e7e7e7;border:0;height:.25em;margin:24px 0;padding:0}.markdown-body blockquote{border-left:.25em solid #ddd;color:#777;font-size:16px;padding:0 1em}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{background-color:#fcfcfc;border:1px solid;border-color:#ccc #ccc #bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb;color:#555;display:inline-block;font-size:11px;line-height:10px;padding:3px 5px;vertical-align:middle}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{font-weight:600;line-height:1.25;margin-bottom:16px;margin-top:24px}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{border-bottom:1px solid #eee;padding-bottom:.3em}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{color:#777;font-size:.85em}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{list-style-type:none;padding:0}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-bottom:0;margin-top:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{font-size:1em;font-style:italic;font-weight:700;margin-top:16px;padding:0}.markdown-body dl dd{margin-bottom:16px;padding:0 16px}.markdown-body table{display:block;overflow:auto;width:100%;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{border:1px solid #ddd;padding:6px 13px}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{background-color:#fff;box-sizing:initial;max-width:100%}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{background-color:initial;max-width:none;vertical-align:text-top}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{border:1px solid #ddd;display:block;float:left;margin:13px 0 0;overflow:hidden;padding:7px;width:auto}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{clear:both;color:#333;display:block;padding:5px 0 0}.markdown-body span.align-center{clear:both;display:block;overflow:hidden}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{clear:both;display:block;overflow:hidden}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{background-color:#0000000a;border-radius:3px;font-size:85%;margin:0;padding:.2em 0}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{content:"\00a0";letter-spacing:-.2em}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{background:#0000;border:0;font-size:100%;margin:0;padding:0;white-space:pre;word-break:normal}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{background-color:#f7f7f7;border-radius:3px;font-size:85%;line-height:1.45;overflow:auto;padding:16px}.markdown-body pre code,.markdown-body pre tt{word-wrap:normal;background-color:initial;border:0;display:inline;line-height:inherit;margin:0;max-width:auto;overflow:visible;padding:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{font-size:12px;line-height:1;overflow:hidden;padding:5px;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{background:#fff;border:0;padding:10px 8px 9px;text-align:right}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{background:#f8f8f8;border-top:0;font-weight:700}.news .alert .markdown-body blockquote{border:0;padding:0 0 0 40px}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{cursor:default!important;float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle}.markdown-body{max-width:758px;overflow:visible!important;padding-bottom:40px;padding-top:40px;position:relative}.markdown-body.next-editor{overflow-x:hidden!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{border-right:3px solid #6ce26c!important;box-sizing:initial;color:#afafaf!important;cursor:default;display:inline-block;min-width:20px;padding:0 8px 0 0;position:relative;text-align:right;z-index:4}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-bottom:none;border-left:none;border-top:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-collapse:inherit!important;border-spacing:0}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{margin-bottom:unset;overflow:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p:last-child{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{background-color:inherit;border-radius:0;overflow:visible;text-align:center;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{height:100%;max-width:100%}.markdown-body pre>code.wrap{word-wrap:break-word;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap}.markdown-body .alert>p:last-child,.markdown-body .alert>ul:last-child{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{background-color:#000;background-position:50%;background-repeat:no-repeat;background-size:contain;cursor:pointer;display:table;overflow:hidden;text-align:center}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{object-fit:contain;width:100%;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{height:100%;left:0;position:absolute;top:0;width:100%}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{color:#fff;height:auto;left:50%;opacity:.3;position:absolute;top:50%;transform:translate(-50%,-50%);transition:opacity .2s;width:auto;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.figma{display:table;padding-bottom:56.25%;position:relative;width:100%}.figma iframe{border:1px solid #eee;bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.markmap-container{height:300px}.markmap-container>svg{height:100%;width:100%}.MJX_Assistive_MathML{display:none}#MathJax_Message{z-index:1000!important}.ui-infobar{color:#777;margin:25px auto -25px;max-width:760px;position:relative;z-index:2}.toc .invisable-node{list-style-type:none}.ui-toc{bottom:20px;position:fixed;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{border-bottom-left-radius:0;border-top-left-radius:0;height:40px;padding:10px 4px}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{color:#fff;opacity:1;transition:opacity .2s}.ui-toc-label:focus{background-color:#ccc;color:#000;opacity:.3}.ui-toc-label:hover{background-color:#ccc;opacity:1;transition:opacity .2s}.ui-toc-dropdown{margin-bottom:20px;margin-top:20px;max-height:70vh;max-width:45vw;overflow:auto;padding-left:10px;padding-right:10px;text-align:inherit;width:25vw}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{letter-spacing:.0029em;padding-right:0}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{color:#767676;display:block;font-size:13px;font-weight:500;padding:4px 20px}.ui-toc-dropdown .nav>li:first-child:last-child>ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{background-color:initial;border-left:1px solid #000;color:#000;padding-left:19px;text-decoration:none}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{border-left:none;border-right:1px solid #000;padding-right:19px}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{background-color:initial;border-left:2px solid #000;color:#000;font-weight:700;padding-left:18px}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{border-left:none;border-right:2px solid #000;padding-right:18px}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:30px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{font-size:12px;font-weight:400;padding-bottom:1px;padding-left:40px;padding-top:1px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{font-weight:500;padding-left:28px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{font-weight:500;padding-left:38px}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{max-height:70vh;max-width:15vw;overflow:auto;position:fixed;top:0}.back-to-top,.expand-toggle,.go-to-bottom{color:#999;display:block;font-size:12px;font-weight:500;margin-left:10px;margin-top:10px;padding:4px 10px}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{background-position:50%;background-repeat:no-repeat;background-size:cover;border-radius:50%;display:block;height:20px;margin-bottom:2px;margin-right:5px;margin-top:2px;width:20px}.ui-user-icon.small{display:inline-block;height:18px;margin:0 0 .2em;vertical-align:middle;width:18px}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-more-info{color:#888;cursor:pointer;vertical-align:middle}.ui-more-info .fa{font-size:16px}.ui-connectedGithub,.ui-published-note{color:#888}.ui-connectedGithub{line-height:23px;white-space:nowrap}.ui-connectedGithub a.file-path{color:#888;padding-left:22px;text-decoration:none}.ui-connectedGithub a.file-path:active,.ui-connectedGithub a.file-path:hover{color:#888;text-decoration:underline}.ui-connectedGithub .fa{font-size:20px}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}.inline-spoiler-section{cursor:pointer}.inline-spoiler-section .spoiler-text{background-color:#333;border-radius:2px}.inline-spoiler-section .spoiler-text>*{opacity:0}.inline-spoiler-section .spoiler-img{filter:blur(10px)}.inline-spoiler-section.raw{background-color:#333;border-radius:2px}.inline-spoiler-section.raw>*{opacity:0}.inline-spoiler-section.unveil{cursor:auto}.inline-spoiler-section.unveil .spoiler-text{background-color:#3333331a}.inline-spoiler-section.unveil .spoiler-text>*{opacity:1}.inline-spoiler-section.unveil .spoiler-img{filter:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{color:#222;position:relative;z-index:1}.markdown-body.slides:before{background-color:currentColor;bottom:0;box-shadow:0 0 0 50vw;content:"";display:block;left:0;position:absolute;right:0;top:0;z-index:-1}.markdown-body.slides section[data-markdown]{background-color:#fff;margin-bottom:1.5em;position:relative;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{left:1em;max-height:100%;overflow:hidden;position:absolute;right:1em;top:50%;transform:translateY(-50%)}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{border:3px solid #777;content:"";height:1.5em;position:absolute;right:1em;top:-1.5em}.site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}svg{text-shadow:none}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled comment-inner" data-hard-breaks="true"><h1 id="Reproduction-of-KPRNet-Improving-projection-based-LiDAR-semantic-segmentation" data-id="Reproduction-of-KPRNet-Improving-projection-based-LiDAR-semantic-segmentation"><a class="anchor hidden-xs" href="#Reproduction-of-KPRNet-Improving-projection-based-LiDAR-semantic-segmentation" title="Reproduction-of-KPRNet-Improving-projection-based-LiDAR-semantic-segmentation"><span class="octicon octicon-link"></span></a><span>Reproduction of KPRNet: Improving projection-based LiDAR</span><br>
+<span>semantic segmentation</span></h1><p><span>In this blog post, we discuss our efforts to replicate and extend the model and results presented in the paper, </span><a href="https://arxiv.org/pdf/2007.12668.pdf" target="_blank" rel="noopener"><span>KPRNet: Improving projection-based LiDAR semantic segmentation</span></a><span> by D. Kochanov, F. Nejadasl, and O. Booij. Our primary objectives are to reproduce the results from the paper, explore the impact of data augmentation on the original </span><a href="http://www.semantic-kitti.org/dataset.html" target="_blank" rel="noopener"><span>SemanticKITTI</span></a><span> dataset to test model robustness, and suggest an approach for training the model on </span><a href="https://www.cvlibs.net/datasets/kitti-360/" target="_blank" rel="noopener"><span>KITTI-360</span></a><span>.&nbsp;The work showcased in this blog is part of the CS4240 Deep Learning course (2022/2023) at Delft University of Technology.</span></p><p><strong><span>Authors (group 17):</span></strong><br>
+<span>Aden Westmaas, (4825373), </span><a href="mailto:a.b.westmaas@student.tudelft.nl" target="_blank" rel="noopener"><span>a.b.westmaas@student.tudelft.nl</span></a><br>
+<span>Badr Essabri, (5099412), </span><a href="mailto:b.essabri@student.tudelft.nl" target="_blank" rel="noopener"><span>b.essabri@student.tudelft.nl</span></a><br>
+<span>Guido Dumont, (5655366), </span><a href="mailto:g.dumont@student.tudelft.nl" target="_blank" rel="noopener"><span>g.dumont@student.tudelft.nl</span></a></p><h2 id="Table-of-Contents" data-id="Table-of-Contents"><a class="anchor hidden-xs" href="#Table-of-Contents" title="Table-of-Contents"><span class="octicon octicon-link"></span></a><span>Table of Contents</span></h2><p><span class="toc"><ul>
+<li><a href="#Reproduction-of-KPRNet-Improving-projection-based-LiDAR-semantic-segmentation" title="Reproduction of KPRNet: Improving projection-based LiDAR
+semantic segmentation">Reproduction of KPRNet: Improving projection-based LiDAR
+semantic segmentation</a><ul>
+<li><a href="#Table-of-Contents" title="Table of Contents">Table of Contents</a></li>
+<li><a href="#Introduction" title="Introduction">Introduction</a></li>
+<li><a href="#Method" title="Method">Method</a></li>
+<li><a href="#Reproduction" title="Reproduction">Reproduction</a></li>
+<li><a href="#Data-augmentation" title="Data augmentation">Data augmentation</a></li>
+<li><a href="#Implementation-of-the-KITTI360-dataset" title="Implementation of the KITTI360 dataset">Implementation of the KITTI360 dataset</a><ul>
+<li><a href="#SemanticKITTI-vs-KITTI360-dataset" title="SemanticKITTI vs KITTI360 dataset">SemanticKITTI vs KITTI360 dataset</a></li>
+<li><a href="#Pointcloud-sampling" title="Pointcloud sampling">Pointcloud sampling</a></li>
+</ul>
+</li>
+<li><a href="#Conclusion" title="Conclusion">Conclusion</a><ul>
+<li><a href="#Limitations" title="Limitations">Limitations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</span></p><h2 id="Introduction" data-id="Introduction"><a class="anchor hidden-xs" href="#Introduction" title="Introduction"><span class="octicon octicon-link"></span></a><span>Introduction</span></h2><p><span>Semantic segmentation is a critical component in the perception systems of autonomous vehicles, as it enables these vehicles to understand and interpret their surroundings. Over the years, significant progress has been made in segmenting camera-based images, and more recently, with the release of publicly labeled LiDAR 3D point cloud datasets, considerable strides have been made in the segmentation of LiDAR measurements as well. LiDAR-based semantic segmentation methods can be broadly classified into two categories: point-wise methods acting directly on the 3D point cloud and methods that rely on the well-developed field of image segmentation. The latter involves projecting individual LiDAR sweeps onto 2D range images, which serve as input to custom CNNs. The resulting 2D predictions are then post-processed using non-learned CRFs or KNN-based voting to obtain more accurate labels for each 3D point.</span></p><p><span>In this blog post, we explore the KPRNet model, which combines the best of both approaches to enhance the accuracy of segmenting LiDAR scans. The primary contributions of KPRNet are </span><span class="ui-comment-inline-span">an improved architecture for 2D projected LiDAR sweeps</span><span> and a learnable module based on KPConv to replace the post-processing step. The blog post shows the steps taken to reproduce the model from the original </span><a href="https://github.com/DeyvidKochanov-TomTom/kprnet" target="_blank" rel="noopener"><span>KPRNet github repository</span></a><span>. Furthermore, we enhanced the dataset used for training and testing the KPRNet model by applying data augmentation techniques. This allowed us to assess the model’s robustness when presented with this newly augmented data. Lastly, we propose a method to retrain the KPRNet model on the newer KITTI-360 dataset.</span></p><p><span>Our source code and instructions can be found </span><a href="https://github.com/guidodumont/DL-project" target="_blank" rel="noopener"><span>here</span></a><span>.</span></p><h2 id="Method" data-id="Method"><a class="anchor hidden-xs" href="#Method" title="Method"><span class="octicon octicon-link"></span></a><span>Method</span></h2><p><span>The method proposed in the paper brings together a 2D semantic segmentation network and 3D point-wise layers. The convolutional network receives a LiDAR scan projected as a range image as input. </span><span class="ui-comment-inline-span">The 2D CNN features obtained are then back-projected to their corresponding 3D points and forwarded to a 3D point-wise module that predicts the ultimate labels.</span><span> Figure 1 shows the full network architecture. The ResNeXt features with stride 16 are fed into an ASPP module and combined with the outputs of the second and first ResNeXt blocks, which have strides of 8 and 4. The result is passed through a KPConv layer, followed by BatchNorm, ReLu and a final classifier.</span></p><p><img src="https://i.imgur.com/4T6Bxe7.png" alt="" loading="lazy"><br>
+<a href="https://arxiv.org/pdf/2007.12668.pdf" target="_blank" rel="noopener"><strong><span>Figure 1: The KPRNet architecture</span></strong></a></p><h4 id="2D-semantic-segmentation" data-id="2D-semantic-segmentation"><a class="anchor hidden-xs" href="#2D-semantic-segmentation" title="2D-semantic-segmentation"><span class="octicon octicon-link"></span></a><span>2D semantic segmentation</span></h4><p><span>The first part of the model consists of a ResNeXt-101 encoder and decoder. The CNN part of the full network is pre-trained on the </span><a href="https://www.cityscapes-dataset.com/" target="_blank" rel="noopener"><span>Cityscapes dataset</span></a><span> as the network must learn semantic features of city like scenery. When transferring the model to the LiDAR segmentation task, we discard one of the filter planes in the first layer because the input for the task only requires two channels, namely, inverse depth and reflectivity.</span></p><h4 id="3D-semantic-segmentation" data-id="3D-semantic-segmentation"><a class="anchor hidden-xs" href="#3D-semantic-segmentation" title="3D-semantic-segmentation"><span class="octicon octicon-link"></span></a><span>3D semantic segmentation</span></h4><p><span>Most methods utilize spherical projection to convert point clouds to range view images. This paper used an </span><a href="https://arxiv.org/pdf/2004.11803.pdf" target="_blank" rel="noopener"><span>alternative method</span></a><span> in which the point clouds are unfolded according to the order in which they were captured by the LiDAR sensor, resulting in smoother projections. Despite the remaining discretization artifacts and overly-smooth 2D labels generated by the CNN, back-projecting to the 3D point cloud can result in mispredictions. To address this, RangeNet++ and other 2D segmentation methods employ KNN or CRF post-processing steps. However, finding the right balance between over-smoothing and under-smoothing the 3D labels using these methods can be challenging.</span></p><p><span>In KPRNet, this post-processing step is replaced by incorporating a single KPConv layer before the final classification. KPConv is a point-convolution operator capable of correcting misclassifications by considering the 2D features of each point and its surrounding 3D context. This change to the CNN architecture is minimal, and the pipeline from a 2D range image to 3D point labels becomes end-to-end learnable.</span></p><h4 id="Training" data-id="Training"><a class="anchor hidden-xs" href="#Training" title="Training"><span class="octicon octicon-link"></span></a><span>Training</span></h4><p><span>The proposed network was trained and evaluated on the </span><a href="http://www.semantic-kitti.org/dataset.html" target="_blank" rel="noopener"><span>SemanticKITTI</span></a><span> which contains 21 sequences. Sequences 1-7, 9 and 10 were used for training while sequence 8 was used for validation. Sequences 11-21 were used as the test dataset. The authors trained the network using 8 Tesla V100 GPUs. The dimensions of the input range scans are 64x2048.</span></p><h4 id="Results-of-paper" data-id="Results-of-paper"><a class="anchor hidden-xs" href="#Results-of-paper" title="Results-of-paper"><span class="octicon octicon-link"></span></a><span>Results of paper</span></h4><p><span>Table 1 shows the test performance of the KPRNet proposed by the paper covered in this blog post. The table shows the test performance for various classes as well as the mean-IOU achieved by the model. From table 1, it can also be seen that for most classes, KPRNet outperformed the state-of-the-art at the time the paper was written.</span></p><p><img src="https://i.imgur.com/jAuVwwI.png" alt="" loading="lazy"><br>
+<strong><span>Table 1: Quantitative performance evaluation of KPRNet LiDAR semantic segmentation on the SemanticKITTI dataset</span></strong></p><h2 id="Reproduction" data-id="Reproduction"><a class="anchor hidden-xs" href="#Reproduction" title="Reproduction"><span class="octicon octicon-link"></span></a><span>Reproduction</span></h2><p><span>Our main goal for the reproduction was to reproduce Table 1 from the paper. To achieve this, we cloned the paper’s original </span><a href="https://github.com/DeyvidKochanov-TomTom/kprnet" target="_blank" rel="noopener"><span>GitHub repository</span></a><span>. Afterwards, we downloaded the required dataset (SemanticKITTI) and the fully trained model weights. From here on, it was challenging to get the code running. The KPRNet repository’s README gives insufficient documentation for how to get the code running smoothly. Also, the requirements.txt file, that was included in the repository, did not work as many of the packages were not backward compatible with newer versions of Python. For this reason, we had to create a new Python environment manually and install the packages one by one. Finally, after solving the Python environment, we encountered the next problem, lack of computation resources. A single prediction from the test set using the pre-trained model took over 30 seconds, and each sequence had about 4700 predictions. So, running the test set on our machines locally was not an option, as the test dataset contained 11 sequences. For this reason, we decided to run the code in a Google Cloud virtual machine (VM). This VM was equipped with an 8-core CPU and a NVIDIA P100 GPU. Despite using a powerful VM, running the test dataset on the model still took about 12 hours to complete.</span></p><p><span>Table 2 shows the IoU scores achieved by the model for all the classes in the test dataset. From this table, it can be seen that our scores are close to what the authors of the paper achieved, but not exacty the same. The authors achieved a mean IoU score of 63.1 while our mean IoU is&nbsp;61.2. In theory, there should not exist a discrepancy between the achieved IoU scores as we cloned the code repository of the paper and used the exact same test dataset as described in the paper. We discussed this phenomenon with one of the authors of the paper and he suggested that this discrepancy may be caused by using different versions for the libraries.</span></p><table>
+<thead>
+<tr>
+<th style="text-align:center"><strong><span>Network</span></strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td><strong><span>Car</span></strong></td>
+<td><strong><span>Bicycle</span></strong></td>
+<td><strong><span>Motorcycle</span></strong></td>
+<td><strong><span>Truck</span></strong></td>
+<td><strong><span>Other-vehicle</span></strong></td>
+<td><strong><span>Person</span></strong></td>
+<td><strong><span>Bicyclist</span></strong></td>
+<td><strong><span>Motorcyclist</span></strong></td>
+<td><strong><span>Road</span></strong></td>
+<td><strong><span>Parking</span></strong></td>
+<td><strong><span>Sidewalk</span></strong></td>
+<td><strong><span>Other-ground</span></strong></td>
+<td><strong><span>Building</span></strong></td>
+<td><strong><span>Fence</span></strong></td>
+<td><strong><span>Vegetation</span></strong></td>
+<td><strong><span>Trunk</span></strong></td>
+<td><strong><span>Terrain</span></strong></td>
+<td><strong><span>Pole</span></strong></td>
+<td><strong><span>Traffic-sign</span></strong></td>
+<td><strong><span>mean-IoU</span></strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>KPRNet [Paper]</span></td>
+<td><span>95.5</span></td>
+<td><span>54.1</span></td>
+<td><span>47.9</span></td>
+<td><span>23.6</span></td>
+<td><span>42.6</span></td>
+<td><span>65.9</span></td>
+<td><span>65.0</span></td>
+<td><span>16.5</span></td>
+<td><span>93.2</span></td>
+<td><span>73.9</span></td>
+<td><span>80.6</span></td>
+<td><span>30.2</span></td>
+<td><span>91.7</span></td>
+<td><span>68.4</span></td>
+<td><span>85.7</span></td>
+<td><span>69.8</span></td>
+<td><span>71.2</span></td>
+<td><span>58.7</span></td>
+<td><span>64.1</span></td>
+<td><span>63.1</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>KPRNet [Reproduction]</span></td>
+<td><span>95.2</span></td>
+<td><span>45.0</span></td>
+<td><span>50.8</span></td>
+<td><span>18.8</span></td>
+<td><span>36.7</span></td>
+<td><span>65.8</span></td>
+<td><span>55.7</span></td>
+<td><span>13.6</span></td>
+<td><span>93.2</span></td>
+<td><span>72.1</span></td>
+<td><span>79.7</span></td>
+<td><span>27.8</span></td>
+<td><span>92.0</span></td>
+<td><span>68.9</span></td>
+<td><span>85.7</span></td>
+<td><span>69.0</span></td>
+<td><span>70.7</span></td>
+<td><span>58.3</span></td>
+<td><span>63.1</span></td>
+<td><span>61.2</span></td>
+</tr>
+</tbody>
+</table><p><strong><span>Table 2: Results for the reproduction of Table 1 from the paper</span></strong></p><h2 id="Data-augmentation" data-id="Data-augmentation"><a class="anchor hidden-xs" href="#Data-augmentation" title="Data-augmentation"><span class="octicon octicon-link"></span></a><span>Data augmentation</span></h2><p><span>To test the robustness of the model, we employed a data augmentation technique, often called: Pixel Dropout. The model takes a two-channel rangeview as input, containing inverse depth reflectivity. In Figures 2 and 5, you can see the original rangeviews without any augmentation. To augment the images, we randomly set a certain percentage of pixels to a large depth and low intensity, which simulates an incomplete point cloud. As shown in Figures 3-4 and 6-7, we experimented with dropout rates of 10% and 20%, respectively, resulting in noisy images.</span></p><p><img src="https://i.imgur.com/JNeE9eT.png" alt="" loading="lazy"><br>
+<strong><span>Figure 2: Reflectivity channel of an original range view of a LiDAR point cloud</span></strong><br>
+<img src="https://i.imgur.com/QEtl6Oc.png" alt="" loading="lazy"><br>
+<strong><span>Figure 3: Reflectivity channel of the range view in figure 2, with 10% of all pixel values randomly set to zero</span></strong></p><p><img src="https://i.imgur.com/Of3Lcbw.png" alt="" loading="lazy"><br>
+<strong><span>Figure 4: Reflectivity channel of the range view in figure 2, with 20% of all pixel values randomly set to zero</span></strong></p><p><img src="https://i.imgur.com/uPxJMvY.png" alt="" loading="lazy"><br>
+<strong><span>Figure 5: Depth channel of an original range view of a LiDAR point cloud</span></strong></p><p><img src="https://i.imgur.com/YpwtURI.png" alt="" loading="lazy"><br>
+<strong><span>Figure 6: Depth channel of the range view in figure 5, with 10% of all pixel values randomly set to zero</span></strong></p><p><img src="https://i.imgur.com/7jsk9oY.png" alt="" loading="lazy"><br>
+<strong><span>Figure 7: Depth channel of the range view in figure 5, with 20% of all pixel values randomly set to zero</span></strong></p><p><span>The dropout process is accomplished using a random mask that sets the depth and reflectivity to -10. This value was chosen because depth and reflectivity are normalized between -10 and 10, where high depth and low reflectivity are both represented by -10 (See the pseudocode below). The code for the dropout is modified in the file run_inference_data_augmentation.py in our </span><a href="https://github.com/guidodumont/DL-project/blob/Badr/kprnet/datasets/semantic_kitti.py" target="_blank" rel="noopener"><span>GitHub repository</span></a><span>. By adjusting the “obscure_factor” , the dropout percentage can be controlled.</span></p><pre><code class="python hljs"><span class="hljs-comment"># Determine the total number of pixels in the image</span>
+height, width = depth_image.shape
+num_pixels = height * width
+
+<span class="hljs-comment"># Set the desired percentage of pixels to 0</span>
+percent_zero = <span class="hljs-number">0.1</span>
+num_zeros = <span class="hljs-built_in">int</span>(num_pixels * percent_zero)
+
+<span class="hljs-comment"># Generate a mask array to indicate which pixels should be set to 0</span>
+mask = np.zeros(num_pixels, dtype=np.uint8)
+mask[:num_zeros] = <span class="hljs-number">1</span>
+np.random.shuffle(mask)
+
+<span class="hljs-comment"># Reshape the mask array to match the image dimensions</span>
+mask = mask.reshape((height, width))
+
+<span class="hljs-comment"># Set the corresponding pixels in the image to -10</span>
+depth_image[mask == <span class="hljs-number">1</span>] = -<span class="hljs-number">10</span>
+refl_image[mask == <span class="hljs-number">1</span>] = -<span class="hljs-number">10</span>
+</code></pre><p><span>We evaluated the performance of the model with and without data augmentation. The results show a significant decline in performance across all classes when data augmentation is used, as seen in the score tables below. Smaller objects, such as people and motorcycles, were particularly impacted. We believe that the decline in performance is due to the depth image, where object shapes become less discernible even at a relatively low dropout rate. This suggests that the depth information is critical to the model, relative to the reflectivity, as the shapes of objects can still be seen in the reflectivity images.</span></p><table>
+<thead>
+<tr>
+<th style="text-align:center"><strong><span>Network</span></strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td><strong><span>Car</span></strong></td>
+<td><strong><span>Bicycle</span></strong></td>
+<td><strong><span>Motorcycle</span></strong></td>
+<td><strong><span>Truck</span></strong></td>
+<td><strong><span>Other-vehicle</span></strong></td>
+<td><strong><span>Person</span></strong></td>
+<td><strong><span>Bicyclist</span></strong></td>
+<td><strong><span>Motorcyclist</span></strong></td>
+<td><strong><span>Road</span></strong></td>
+<td><strong><span>Parking</span></strong></td>
+<td><strong><span>Sidewalk</span></strong></td>
+<td><strong><span>Other-ground</span></strong></td>
+<td><strong><span>Building</span></strong></td>
+<td><strong><span>Fence</span></strong></td>
+<td><strong><span>Vegetation</span></strong></td>
+<td><strong><span>Trunk</span></strong></td>
+<td><strong><span>Terrain</span></strong></td>
+<td><strong><span>Pole</span></strong></td>
+<td><strong><span>Traffic-sign</span></strong></td>
+<td><strong><span>mean-IoU</span></strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>KPRNet [Reproduction]</span></td>
+<td><span>95.2</span></td>
+<td><span>45.0</span></td>
+<td><span>50.8</span></td>
+<td><span>18.8</span></td>
+<td><span>36.7</span></td>
+<td><span>65.8</span></td>
+<td><span>55.7</span></td>
+<td><span>13.6</span></td>
+<td><span>93.2</span></td>
+<td><span>72.1</span></td>
+<td><span>79.7</span></td>
+<td><span>27.8</span></td>
+<td><span>92.0</span></td>
+<td><span>68.9</span></td>
+<td><span>85.7</span></td>
+<td><span>69.0</span></td>
+<td><span>70.7</span></td>
+<td><span>58.3</span></td>
+<td><span>63.1</span></td>
+<td><span>61.2</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>KPRNet [10% augmented data]</span></td>
+<td><span>26.7</span></td>
+<td><span>0.0</span></td>
+<td><span>0.0</span></td>
+<td><span>0.0</span></td>
+<td><span>0.9</span></td>
+<td><span>0.6</span></td>
+<td><span>0.2</span></td>
+<td><span>0.0</span></td>
+<td><span>2.3</span></td>
+<td><span>0.0</span></td>
+<td><span>4.7</span></td>
+<td><span>0.0</span></td>
+<td><span>32.2</span></td>
+<td><span>5.9</span></td>
+<td><span>49.4</span></td>
+<td><span>9.3</span></td>
+<td><span>11.2</span></td>
+<td><span>13.6</span></td>
+<td><span>37.4</span></td>
+<td><span>10.2</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span>KPRNet [20% augmented data]</span></td>
+<td><span>13.4</span></td>
+<td><span>0.0</span></td>
+<td><span>0.0</span></td>
+<td><span>0.0</span></td>
+<td><span>0.3</span></td>
+<td><span>0.1</span></td>
+<td><span>0.0</span></td>
+<td><span>0.0</span></td>
+<td><span>1.0</span></td>
+<td><span>0.0</span></td>
+<td><span>7.1</span></td>
+<td><span>0.0</span></td>
+<td><span>25.1</span></td>
+<td><span>5.6</span></td>
+<td><span>41.1</span></td>
+<td><span>5.8</span></td>
+<td><span>6.7</span></td>
+<td><span>8.8</span></td>
+<td><span>31.0</span></td>
+<td><span>7.7</span></td>
+</tr>
+</tbody>
+</table><p><strong><span>Table 3: Results for KPRNet tested on the augmented dataset</span></strong></p><h2 id="Implementation-of-the-KITTI360-dataset" data-id="Implementation-of-the-KITTI360-dataset"><a class="anchor hidden-xs" href="#Implementation-of-the-KITTI360-dataset" title="Implementation-of-the-KITTI360-dataset"><span class="octicon octicon-link"></span></a><span>Implementation of the KITTI360 dataset</span></h2><p><span>The current model is trained and validated using the </span><a href="http://www.semantic-kitti.org/dataset.html" target="_blank" rel="noopener"><span>SemanticKITTI</span></a><span> dataset. However, soon after the paper was published, a new dataset called </span><a href="https://www.cvlibs.net/datasets/kitti-360/" target="_blank" rel="noopener"><span>KITTI360</span></a><span> was released. This dataset is more extensive compared to SementicKITTI and contains 73km of labeled camera and LiDAR data (recorded with the same LiDAR sensor). In this section, we present a methodology to train and validate the model on the KITTI360 dataset. Beause only a hand full of datasets contain segmentation on point-level bases, making the KITTI360 dataset compatible with the model will increase the size of the trainingset significantly and thus potentially improve performance as well.</span></p><h3 id="SemanticKITTI-vs-KITTI360-dataset" data-id="SemanticKITTI-vs-KITTI360-dataset"><a class="anchor hidden-xs" href="#SemanticKITTI-vs-KITTI360-dataset" title="SemanticKITTI-vs-KITTI360-dataset"><span class="octicon octicon-link"></span></a><span>SemanticKITTI vs KITTI360 dataset</span></h3><p><span>The main difference between the two datasets is the type of LiDAR data available. SemanticKITTI consists of single point clouds created by a single revolution/sweep of the sensor, including ego-motion compensation. KITTI360 however, consists of sequences where multiple point clouds are merged together to construct an entire sequence. From these sequences, it is not possible to directly construct a rangeview, which is required as input for the KPRNet. So, to use KITTI360 within KPRNet, a data preparation step is needed to construct rangeviews of lidarpoints obtained by a single revolution of the LiDAR sensor.</span></p><p><img src="https://i.imgur.com/pLiQSpE.png" alt="" loading="lazy"><br>
+<strong><span>Figure 8: Pointcloud in SemanticKITTI</span></strong></p><p><img src="https://i.imgur.com/FvfHIcf.jpg" alt="" loading="lazy"><br>
+<strong><span>Figure 9: Sequence of connected pointclouds within KITTI360</span></strong></p><h3 id="Pointcloud-sampling" data-id="Pointcloud-sampling"><a class="anchor hidden-xs" href="#Pointcloud-sampling" title="Pointcloud-sampling"><span class="octicon octicon-link"></span></a><span>Pointcloud sampling</span></h3><p><span>To create single point clouds from the sequences in the KITTI360 dataset, a sampling method was created. This sampling method samples points from a sequence of LiDAR pointclouds based on its origin (position of the LiDAR sensor) and the characteristics of the sensor, see the pseudocode below. One iteration creates a single LiDAR pointcloud that </span><em><span>could</span></em><span> be measured by the LiDAR sensor if it was positioned in the same place as the used origin. The origin used in this sampling method is calculated from the car pose data provided in the KITTI360 dataset.</span></p><pre><code class="python hljs">pcl = KITTI360 <span class="hljs-comment"># KITTI360 Lidar pointcloud</span>
+pcl_transformed = transform(pcl, origin) <span class="hljs-comment"># Transform pointcloud with respect to origin</span>
+pcl_spherical = spherical_coordinates(pcl_transformed) <span class="hljs-comment"># Convert to spherical coordinates (r, phi, theta)</span>
+pcl_spherical = pcl_spherical[:, <span class="hljs-number">0</span>] &lt; max_range_lidar <span class="hljs-comment"># Sampled points within range of the sensor</span>
+
+<span class="hljs-comment"># Define horizontal and vertical angles</span>
+horizontal_angles = np.linspace(lidar_horizontal_range, lidar_horizontal_resolution)
+vertical_angles = np.linspace(lidar_vertical_range, lidar_vertical_resolution)
+
+<span class="hljs-comment"># Sample instances</span>
+<span class="hljs-keyword">for</span> h <span class="hljs-keyword">in</span> horizontal_angles:
+    <span class="hljs-keyword">for</span> v <span class="hljs-keyword">in</span> vertical_angles:
+        point_index = np.argmin(<span class="hljs-built_in">abs</span>(pcl_spherical[:, <span class="hljs-number">1</span>:] - [v, h]))
+        cloud_indeces.append(pcl_spherical[point_index])
+</code></pre><p><span>The pseudocode above creates ‘perfect’ point clouds where every light beam sent receives a measurement. In practice, however, many emitted lightbeams do not reflect back to the lidar sensor, resulting in a suboptimal point cloud. This phenomenon is simulated in the sampling method by randomly deleting a portion of the lidar points.</span></p><h4 id="Results-and-limitations" data-id="Results-and-limitations"><a class="anchor hidden-xs" href="#Results-and-limitations" title="Results-and-limitations"><span class="octicon octicon-link"></span></a><span>Results and limitations</span></h4><p><span>This sampling method creates point clouds that </span><em><span>could</span></em><span> be measured by the lidar sensor, see the figure below.</span></p><p><img src="https://i.imgur.com/43FVQo2.png" alt="" loading="lazy"><br>
+<strong><span>Figure 10: Sampled pointcloud from the KITTI360 dataset</span></strong></p><p><span>However, the sampling methodology created is not perfect. As mentioned before, the resulting point cloud </span><em><span>could</span></em><span> be measured by the LiDAR sensor and therefore contain inaccuracies. Further, the current version of the sampling methodology is computationally expensive, so it’s not a plug-and-play algorithm to make the entire KITTI360 usable for the KPRNet. This is also the reason why the model is not evaluated on these sampled point clouds.</span></p><h2 id="Conclusion" data-id="Conclusion"><a class="anchor hidden-xs" href="#Conclusion" title="Conclusion"><span class="octicon octicon-link"></span></a><span>Conclusion</span></h2><p><span>In conclusion, this blog post discussed our efforts to reproduce and extend the KPRNet model proposed in </span><a href="https://arxiv.org/pdf/2007.12668.pdf" target="_blank" rel="noopener"><span>KPRNet: Improving projection-based LiDAR semantic segmentation</span></a><span>, for projection-based LiDAR semantic segmentation. We reproduced the results from the paper and explored the impact of data augmentation techniques on the SemanticKITTI dataset to test model robustness. We found that noise in the inverse depth channel of the rangeview has a greater impact on the model’s performance compared to similar noise in the reflectivity channel. Additionally, we proposed a method to use the KPRNet model on the newer KITTI-360 dataset. However, the proposed sampling methodology is computationally expensive and thus not a plug-and-play solution.</span></p><h3 id="Limitations" data-id="Limitations"><a class="anchor hidden-xs" href="#Limitations" title="Limitations"><span class="octicon octicon-link"></span></a><span>Limitations</span></h3><p><span>We did not manage to complete a full reproduction of the paper as we were unable to train the model from scratch. As mentioned before, the authors of the paper used many computational resources to train the model on the semanticKITTI dataset. We did not have this amount of compute at our disposal, and thus, it was impossible to train the model on our laptops locally or on the Google Cloud Platform. Furthermore, the proposed sampling methodology to use the KITTI360 dataset has limitations. Firstly, it constructs a LiDAR sweep that could be measured by the LiDAR sensor. Secondly, the resulting point clouds can contain imperfections due to the assumptions made in the sampling process.</span></p><h4 id="Contribution" data-id="Contribution"><a class="anchor hidden-xs" href="#Contribution" title="Contribution"><span class="octicon octicon-link"></span></a><span>Contribution</span></h4><p><span>Aden: reproduction</span><br>
+<span>Badr: data augmentation</span><br>
+<span>Guido: implementation of KITTI360 dataset</span></p></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li><a href="#Reproduction-of-KPRNet-Improving-projection-based-LiDAR-semantic-segmentation" title="Reproduction of KPRNet: Improving projection-based LiDAR
+semantic segmentation">Reproduction of KPRNet: Improving projection-based LiDAR
+semantic segmentation</a><ul class="nav">
+<li><a href="#Table-of-Contents" title="Table of Contents">Table of Contents</a></li>
+<li><a href="#Introduction" title="Introduction">Introduction</a></li>
+<li><a href="#Method" title="Method">Method</a></li>
+<li><a href="#Reproduction" title="Reproduction">Reproduction</a></li>
+<li><a href="#Data-augmentation" title="Data augmentation">Data augmentation</a></li>
+<li><a href="#Implementation-of-the-KITTI360-dataset" title="Implementation of the KITTI360 dataset">Implementation of the KITTI360 dataset</a><ul class="nav">
+<li><a href="#SemanticKITTI-vs-KITTI360-dataset" title="SemanticKITTI vs KITTI360 dataset">SemanticKITTI vs KITTI360 dataset</a></li>
+<li><a href="#Pointcloud-sampling" title="Pointcloud sampling">Pointcloud sampling</a></li>
+</ul>
+</li>
+<li><a href="#Conclusion" title="Conclusion">Conclusion</a><ul class="nav">
+<li><a href="#Limitations" title="Limitations">Limitations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
+        <div class="toc"><ul class="nav">
+<li><a href="#Reproduction-of-KPRNet-Improving-projection-based-LiDAR-semantic-segmentation" title="Reproduction of KPRNet: Improving projection-based LiDAR
+semantic segmentation">Reproduction of KPRNet: Improving projection-based LiDAR
+semantic segmentation</a><ul class="nav">
+<li><a href="#Table-of-Contents" title="Table of Contents">Table of Contents</a></li>
+<li><a href="#Introduction" title="Introduction">Introduction</a></li>
+<li><a href="#Method" title="Method">Method</a></li>
+<li><a href="#Reproduction" title="Reproduction">Reproduction</a></li>
+<li><a href="#Data-augmentation" title="Data augmentation">Data augmentation</a></li>
+<li><a href="#Implementation-of-the-KITTI360-dataset" title="Implementation of the KITTI360 dataset">Implementation of the KITTI360 dataset</a><ul class="nav">
+<li><a href="#SemanticKITTI-vs-KITTI360-dataset" title="SemanticKITTI vs KITTI360 dataset">SemanticKITTI vs KITTI360 dataset</a></li>
+<li><a href="#Pointcloud-sampling" title="Pointcloud sampling">Pointcloud sampling</a></li>
+</ul>
+</li>
+<li><a href="#Conclusion" title="Conclusion">Conclusion</a><ul class="nav">
+<li><a href="#Limitations" title="Limitations">Limitations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
